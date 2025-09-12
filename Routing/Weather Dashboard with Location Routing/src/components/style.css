@@ -1,0 +1,103 @@
+/* Overall app container */
+.weather-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #74ebd5, #ACB6E5);
+    min-height: 100vh;
+  }
+  
+  /* Title */
+  .weather-app h1 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Input and button container */
+  .weather-app .search-box {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Input field */
+  .weather-app input {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    flex: 1;
+  }
+  
+  /* Button */
+  .weather-app button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #0077ff;
+    color: white;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+  }
+  
+  .weather-app button:hover {
+    background-color: #005bb5;
+    transform: translateY(-2px);
+  }
+  
+  /* Weather info card */
+  .weather-app .weather-card {
+    background: #fff;
+    color: #333;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .weather-app .weather-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  }
+  
+  /* Temperature */
+  .weather-app .weather-card h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Extra info list */
+  .weather-app .weather-card ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+  }
+  
+  .weather-app .weather-card li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  /* Responsive */
+  @media (max-width: 500px) {
+    .weather-app .search-box {
+      flex-direction: column;
+      gap: 0.5rem;
+      width: 100%;
+    }
+  
+    .weather-app input, .weather-app button {
+      width: 100%;
+    }
+  }
+  
