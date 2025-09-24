@@ -1,0 +1,16 @@
+{
+  "dishes": [
+    {
+      "id": 1749800064998,
+      "dish": "Dosa",
+      "price": 120,
+      "category": "Break-fast"
+    },
+    {
+      "id": 1749800091878,
+      "dish": "Itely",
+      "price": 80,
+      "category": "Break-fast"
+    }
+  ]
+}
